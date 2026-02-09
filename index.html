@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>王小明｜資深前端工程師</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header h2 {
+      font-weight: 400;
+      color: #94a3b8;
+      margin: 10px 0 20px;
+    }
+
+    header p {
+      max-width: 600px;
+      color: #cbd5f5;
+      line-height: 1.8;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(2,6,23,0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      font-weight: 600;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      border-left: 5px solid #38bdf8;
+      padding-left: 15px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 10px 15px;
+      margin: 8px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+
+    .timeline {
+      border-left: 2px solid #334155;
+      padding-left: 30px;
+    }
+
+    .job {
+      margin-bottom: 40px;
+    }
+
+    .job h4 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #38bdf8;
+    }
+
+    .job span {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project {
+      background: #020617;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform .3s;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+    }
+
+    .project img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project div {
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">關於我</a>
+  <a href="#skills">技能</a>
+  <a href="#experience">經歷</a>
+  <a href="#projects">作品</a>
+  <a href="#education">學歷</a>
+  <a href="#contact">聯絡</a>
+</nav>
+
+<header id="about">
+  <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1" alt="headshot">
+  <h1>王小明</h1>
+  <h2>資深前端工程師 Senior Frontend Engineer</h2>
+  <p>
+    超過 10 年前端開發經驗，專精於 HTML、CSS 與現代 JavaScript 框架，
+    擅長打造高效能、可維護、具商業價值的前端架構。
+  </p>
+</header>
+
+<section id="skills">
+  <h3>技術技能</h3>
+  <div class="skills">
+    <span>HTML5</span>
+    <span>CSS3 / Tailwind</span>
+    <span>JavaScript (ES6+)</span>
+    <span>React</span>
+    <span>Vue</span>
+    <span>Git / GitHub</span>
+    <span>Webpack / Vite</span>
+    <span>RESTful API</span>
+    <span>Responsive Design</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h3>工作經歷</h3>
+  <div class="timeline">
+    <div class="job">
+      <h4>凱鈿行動科技股份有限公司｜資深前端工程師</h4>
+      <span>2019 – 2025</span>
+      <p>主導企業級產品前端架構，導入 React 與模組化設計，效能提升 40%。</p>
+    </div>
+
+    <div class="job">
+      <h4>研華科技股份有限公司｜前端工程師</h4>
+      <span>2016 – 2018</span>
+      <p>負責工業平台 Web UI 開發，與 UX 團隊密切合作。</p>
+    </div>
+
+    <div class="job">
+      <h4>趨勢科技股份有限公司｜前端實習工程師</h4>
+      <span>2014 – 2016</span>
+      <p>參與資安產品後台系統前端開發。</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3>專案作品</h3>
+  <div class="projects">
+    <div class="project">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+      <div>
+        <h4>企業後台管理系統</h4>
+        <p>React + REST API 架構</p>
+        <a href="#">GitHub</a> ｜ <a href="#">Demo</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <div>
+        <h4>產品形象官網</h4>
+        <p>HTML / CSS / JavaScript</p>
+        <a href="#">GitHub</a> ｜ <a href="#">Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h3>教育背景</h3>
+  <p>國立臺灣大學 資訊工程學系 學士</p>
+  <p>國立臺灣大學 資訊工程研究所 碩士</p>
+</section>
+
+<section id="contact">
+  <h3>聯絡方式</h3>
+  <p>LinkedIn：<a href="https://www.linkedin.com/" target="_blank">https://www.linkedin.com/</a></p>
+  <p>Email：example@gmail.com</p>
+</section>
+
+<footer>
+  © 2026 王小明｜Frontend Engineer
+</footer>
+
+</body>
+</html>
